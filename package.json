@@ -1,0 +1,37 @@
+{
+   "name": "pbcatrest",
+   "version": "0.0.1",
+   "description": "Pbcat rest based backend developed using TypeORM.",
+   "devDependencies": {
+      "@types/node": "^8.10.51",
+      "express-list-endpoints": "5.0.0",
+      "ts-node": "3.3.0",
+      "typescript": "3.3.3333"
+   },
+   "dependencies": {
+      "@types/bcryptjs": "^2.4.2",
+      "@types/body-parser": "^1.17.1",
+      "@types/cors": "^2.8.6",
+      "@types/helmet": "0.0.43",
+      "@types/jsonwebtoken": "^8.3.3",
+      "bcryptjs": "^2.4.3",
+      "body-parser": "^1.19.0",
+      "class-transformer": "^0.2.3",
+      "class-validator": "^0.9.1",
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "helmet": "^3.20.0",
+      "jsonwebtoken": "^8.5.1",
+      "mysql2": "^2.3.2",
+      "reflect-metadata": "^0.1.10",
+      "ts-node-dev": "^1.0.0-pre.41",
+      "typeorm": "0.2.17"
+   },
+   "scripts": {
+      "test": "ts-node src/test.ts",
+      "tsc": "tsc",
+      "start": "set debug=* && ts-node-dev --respawn --transpileOnly ./src/index.ts",
+      "prod": "tsc && node ./build/index.js",
+      "migration:run": "ts-node ./node_modules/typeorm/cli.js migration:run"
+   }
+}
